@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/mulish_bold"
-            android:text="Sharet Elkanas"
+            android:text="@string/sharet_elkanas"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -112,7 +112,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="00:12"
+                android:text="@string/_00_12"
                 android:textColor="@color/seek_gray"
                 android:textSize="14sp" />
 
@@ -126,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:text="5:10"
+                android:text="@string/_5_10"
                 android:textColor="@color/seek_gray"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -154,7 +154,7 @@
             android:layout_height="0dp"
             android:layout_gravity="center"
             android:layout_weight=".5"
-            android:text="Sharet Elkanas | Rasha Rezk"
+            android:text="@string/sharet_elkanas_rasha_rezk"
             android:textColor="@color/black"
             android:textSize="14sp" />
 
