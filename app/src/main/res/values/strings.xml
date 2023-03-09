@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Spacetoon App</string>
+    <string name="sharet_elkanas_rasha_rezk">Sharet Elkanas | Rasha Rezk</string>
+    <string name="_5_10">5:10</string>
+    <string name="_00_12">00:12</string>
+    <string name="sharet_elkanas">Sharet Elkanas</string>
 </resources>
