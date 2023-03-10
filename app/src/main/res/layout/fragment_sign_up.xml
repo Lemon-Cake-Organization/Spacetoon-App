@@ -1,6 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@colors/backGround">
+
+
+    <ImageView
+        android:id="@+id/logo_spacetoon"
+        android:layout_width="137dp"
+        android:layout_height="@dimen/_95ssp"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:src="@drawable/spacetoon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join with us!"
+        android:textColor="#40000000"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="@+id/logo_spacetoon"
+        app:layout_constraintStart_toStartOf="@+id/logo_spacetoon"
+        app:layout_constraintTop_toBottomOf="@id/logo_spacetoon" />
+
+
+    <TextView
+        android:id="@+id/text_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_42ssp"
+        android:text="Full Name"
+        android:textColor="#40000000"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/slogan"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_8ssp"
+        android:layout_marginEnd="@dimen/_16ssp"
+        android:background="@drawable/shape_rectangle"
+        android:hint="@string/enter_your_name"
+        android:padding="@dimen/_7ssp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/text_full_name"
+        app:layout_constraintTop_toBottomOf="@id/text_full_name" />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/e_mail"
+        android:textColor="#40000000"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@id/text_full_name"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_8ssp"
+        android:layout_marginEnd="@dimen/_16ssp"
+        android:background="@drawable/shape_rectangle"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_7ssp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/text_full_name"
+        app:layout_constraintTop_toBottomOf="@id/text_email" />
+
+    <TextView
+        android:id="@+id/text_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20ssp"
+        android:text="Password"
+        android:textColor="#40000000"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@id/text_full_name"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_8ssp"
+        android:layout_marginEnd="@dimen/_16ssp"
+        android:background="@drawable/shape_rectangle"
+        android:drawableRight="@drawable/ic_sharp_remove_red_eye_24"
+        android:drawablePadding="@dimen/_30ssp"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:padding="@dimen/_7ssp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/text_full_name"
+        app:layout_constraintTop_toBottomOf="@id/text_password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_marginEnd="@dimen/_16ssp"
+        android:background="@drawable/my_shape"
+        android:text="@string/sign_up"
+        android:textColor="#FAFAFA"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/another"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20ssp"
+        android:layout_marginEnd="@dimen/_17ssp"
+        android:text="@string/or_sign_up_with"
+        android:textColor="#50000000"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up"
+        app:layout_constraintStart_toStartOf="@+id/sign_up"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up" />
+
+    <ImageView
+        android:id="@+id/logo_google"
+        android:layout_width="@dimen/_30ssp"
+        android:layout_height="@dimen/_30ssp"
+        android:layout_marginTop="@dimen/_3ssp"
+        android:src="@drawable/images"
+        app:layout_constraintEnd_toEndOf="@id/another"
+        app:layout_constraintStart_toEndOf="@id/another"
+        app:layout_constraintTop_toBottomOf="@id/another" />
+
+    <ImageView
+        android:id="@+id/logo_facebook"
+        android:layout_width="@dimen/_30ssp"
+        android:layout_height="@dimen/_30ssp"
+        android:layout_marginTop="@dimen/_3ssp"
+        android:src="@drawable/facebookkk"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_google"
+        app:layout_constraintEnd_toStartOf="@id/another"
+        app:layout_constraintStart_toStartOf="@id/another"
+        app:layout_constraintTop_toBottomOf="@id/another" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:text="@string/already_have_an_account_login"
+        app:layout_constraintEnd_toEndOf="@id/logo_google"
+        app:layout_constraintStart_toStartOf="@id/logo_facebook"
+        app:layout_constraintTop_toBottomOf="@id/logo_facebook" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
