@@ -28,7 +28,6 @@
         app:layout_constraintStart_toStartOf="@+id/logo_spacetoon"
         app:layout_constraintTop_toBottomOf="@id/logo_spacetoon" />
 
-
     <TextView
         android:id="@+id/text_full_name"
         android:layout_width="wrap_content"
