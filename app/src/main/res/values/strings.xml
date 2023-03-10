@@ -4,4 +4,13 @@
     <string name="_5_10">5:10</string>
     <string name="_00_12">00:12</string>
     <string name="sharet_elkanas">Sharet Elkanas</string>
+
+    <string name="welcome">Welcome!</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">forget your password?</string>
+    <string name="or">Or login with</string>
+    <string name="new_guest">Don\'t have an account</string>
+    <string name="sign_up">sign up</string>
 </resources>
+
