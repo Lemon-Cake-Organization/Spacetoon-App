@@ -5,6 +5,21 @@
     <string name="_00_12">00:12</string>
     <string name="sharet_elkanas">Sharet Elkanas</string>
 
+    <string name="mahmoud_deif">Mahmoud deif</string>
+    <string name="_3_hr">3 hr</string>
+    <string name="engineer">Engineer</string>
+    <string name="russian">Russian</string>
+    <string name="uk">UK</string>
+    <string name="_5_days_ago">5 Days ago</string>
+    <string name="_150_reviews">(150 Reviews)</string>
+    <string name="_4_5">4.5</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="e_mail">E-mail</string>
+    <string name="enter_email">Enter email</string>
+    <string name="sign_up">Sign up</string>
+    <string name="or_sign_up_with">Or sign up with</string>
+    <string name="already_have_an_account_login">already have an account? Login</string>
+
     <string name="welcome">Welcome!</string>
     <string name="email">E-mail</string>
     <string name="password">Password</string>
@@ -13,4 +28,5 @@
     <string name="new_guest">Don\'t have an account</string>
     <string name="sign_up">sign up</string>
 </resources>
+
 
