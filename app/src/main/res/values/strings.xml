@@ -20,4 +20,13 @@
     <string name="or_sign_up_with">Or sign up with</string>
     <string name="already_have_an_account_login">already have an account? Login</string>
 
+    <string name="welcome">Welcome!</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">forget your password?</string>
+    <string name="or">Or login with</string>
+    <string name="new_guest">Don\'t have an account</string>
+    <string name="sign_up">sign up</string>
 </resources>
+
+
