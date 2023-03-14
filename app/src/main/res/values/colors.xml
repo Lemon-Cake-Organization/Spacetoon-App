@@ -18,5 +18,6 @@
     <color name="buttonTextColor">#FFFFFF</color>
     <color name="primary_color">#F5F5F5</color>
     <color name="background_color">#FAFAFA</color>
+    <color name="song_name_color">#DE1E1E1E</color>
 
 </resources>

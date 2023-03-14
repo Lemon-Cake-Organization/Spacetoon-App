@@ -42,8 +42,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/mulish_bold"
                 android:text="@string/sharet_elkanas"
-                android:textColor="#CC000000"
-                android:textFontWeight="1000"
+                android:textColor="#BF000000"
                 android:textSize="23sp"
                 android:textStyle="bold" />
 
@@ -98,7 +97,7 @@
                 android:id="@+id/l_playing_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_13sdp"
                 app:layout_constraintBottom_toTopOf="@id/l_control_video"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -111,7 +110,6 @@
                     android:layout_marginStart="@dimen/_16sdp"
                     android:text="@string/_00_12"
                     android:textColor="@color/seek_gray"
-                    android:textFontWeight="800"
                     android:textSize="14sp" />
 
                 <View
@@ -126,7 +124,6 @@
                     android:layout_marginEnd="16dp"
                     android:text="@string/_5_10"
                     android:textColor="@color/seek_gray"
-                    android:textFontWeight="800"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -134,7 +131,7 @@
                 android:id="@+id/music_progress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_16sdp"
                 android:gravity="center"
                 android:progress="35"
                 android:progressBackgroundTint="@color/seek_gray"
@@ -153,9 +150,9 @@
                 android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginBottom="@dimen/_20sdp"
                 android:text="@string/sharet_elkanas_rasha_rezk"
-                android:textColor="@color/black"
-                android:textFontWeight="700"
-                android:textSize="14sp" />
+                android:textColor="@color/song_name_color"
+                android:textSize="14sp"
+                android:textFontWeight="300"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
