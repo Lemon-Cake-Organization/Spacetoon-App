@@ -1,121 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/background_color"
-    android:orientation="vertical">
-
-    <LinearLayout
-        android:id="@+id/l_music_bar"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="21dp"
-        android:layout_weight="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/iv_back_arrow"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="3dp"
-            android:background="@drawable/ic_arrow_back" />
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:layout_weight="1" />
-
-        <TextView
-
-            android:id="@+id/tv_anime_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/mulish_bold"
-            android:text="@string/sharet_elkanas"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:id="@+id/iv_search"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="3dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="3dp"
-            android:background="@drawable/ic_search" />
-
-
-    </LinearLayout>
-
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="9"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
         android:orientation="vertical">
 
-
-        <ImageView
-            android:id="@+id/iv_video_image"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:background="@drawable/hunter"
-            android:scaleType="centerInside"
-            app:layout_constraintBottom_toTopOf="@id/l_playing_time"
-            app:layout_constraintDimensionRatio="H,1:1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/l_music_bar" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/l_control_video"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="5dp"
-        android:layout_weight="3"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/music_progress">
-
-
         <LinearLayout
-            android:id="@+id/l_playing_time"
+            android:id="@+id/l_music_bar"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".5"
-            app:layout_constraintBottom_toTopOf="@id/l_control_video"
+            android:layout_weight="1"
+            android:padding="@dimen/_8sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_video_image">
+            app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/tv_time_now"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:id="@+id/iv_back_arrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
                 android:layout_marginStart="16dp"
-                android:text="@string/_00_12"
-                android:textColor="@color/seek_gray"
-                android:textSize="14sp" />
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/ic_arrow_back" />
 
             <View
                 android:layout_width="wrap_content"
@@ -123,122 +36,210 @@
                 android:layout_weight="1" />
 
             <TextView
-                android:id="@+id/tv_video_time"
+                android:id="@+id/tv_anime_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/mulish_bold"
+                android:text="@string/sharet_elkanas"
+                android:textColor="#CC000000"
+                android:textFontWeight="1000"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
                 android:layout_marginEnd="16dp"
-                android:text="@string/_5_10"
-                android:textColor="@color/seek_gray"
-                android:textSize="14sp" />
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/ic_search" />
         </LinearLayout>
-
-
-        <SeekBar
-            android:id="@+id/music_progress"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:progress="35"
-            android:progressBackgroundTint="@color/seek_gray"
-            android:progressTint="@color/base_red"
-            android:thumbTint="@color/base_red"
-            app:layout_constraintBottom_toTopOf="@+id/l_control_video"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/l_playing_time" />
-
-
-        <TextView
-            android:id="@+id/tv_music_name"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_weight=".5"
-            android:text="@string/sharet_elkanas_rasha_rezk"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/iv_video_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_364sdp"
+                android:adjustViewBounds="true"
+                android:alpha="0.96"
+                android:background="@drawable/hunter"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@id/l_playing_time"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/l_music_bar" />
+        </LinearLayout>
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/shi_favorite_video"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="24dp"
-                android:background="@drawable/ic_favorite" />
+        <LinearLayout
+            android:id="@+id/l_control_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/music_progress">
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:layout_weight="1" />
+            <LinearLayout
+                android:id="@+id/l_playing_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                app:layout_constraintBottom_toTopOf="@id/l_control_video"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_video_image">
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/shi_rewind_video"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_video_rewind" />
+                <TextView
+                    android:id="@+id/tv_time_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:text="@string/_00_12"
+                    android:textColor="@color/seek_gray"
+                    android:textFontWeight="800"
+                    android:textSize="14sp" />
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:layout_weight="1" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btn_play"
+                <TextView
+                    android:id="@+id/tv_video_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/_5_10"
+                    android:textColor="@color/seek_gray"
+                    android:textFontWeight="800"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/music_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:progress="35"
+                android:progressBackgroundTint="@color/seek_gray"
+                android:progressTint="@color/base_red"
+                android:thumbTint="@color/base_red"
+                app:layout_constraintBottom_toTopOf="@+id/l_control_video"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/l_playing_time" />
+
+            <TextView
+                android:id="@+id/tv_music_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:backgroundTint="@color/base_red"
-                android:foreground="@drawable/ic_play_video"
-                android:tintMode="@color/white" />
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="@string/sharet_elkanas_rasha_rezk"
+                android:textColor="@color/black"
+                android:textFontWeight="700"
+                android:textSize="14sp" />
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:layout_weight="1" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/shi_forward_video"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_video_forward" />
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:layout_weight="1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/shi_download_video"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="24dp"
-                app:srcCompat="@drawable/download_svg"
-                app:tint="@color/gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:orientation="horizontal">
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:layout_weight="1" />
-            
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/shi_favorite_video"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/ic_favorite" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/shi_rewind_video"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_video_rewind" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/btn_play"
+                    android:layout_width="@dimen/_58sdp"
+                    android:layout_height="@dimen/_58sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/play_button_background"
+                    android:src="@drawable/ic_play_video" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/shi_forward_video"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_video_forward" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/shi_download_video"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="24dp"
+                    app:srcCompat="@drawable/download_svg"
+                    app:tint="@color/gray" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
-
-</LinearLayout>
+</ScrollView>
