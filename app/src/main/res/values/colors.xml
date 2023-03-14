@@ -20,4 +20,10 @@
     <color name="background_color">#FAFAFA</color>
     <color name="song_name_color">#DE1E1E1E</color>
 
+    <color name="black_60">#99000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_38">#61000000</color>
+    <color name="black_10">#1A000000</color>
+
 </resources>
