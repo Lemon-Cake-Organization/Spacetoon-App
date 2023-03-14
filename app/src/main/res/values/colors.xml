@@ -16,6 +16,7 @@
     <color name="colorText">#000000</color>
     <color name="backGroundButtonTime">#AD1111</color>
     <color name="buttonTextColor">#FFFFFF</color>
-    <color name="backGround">#F5F5F5</color>
+    <color name="primary_color">#F5F5F5</color>
+    <color name="background_color">#FAFAFA</color>
 
 </resources>

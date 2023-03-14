@@ -205,7 +205,7 @@
             android:id="@+id/textViewStartSignUpText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/mulish_extralight"
+            android:fontFamily="@font/mulish_extra_light"
             android:text="@string/new_guest"
             android:textColor="@color/gray"
             android:textSize="@dimen/_12ssp"
