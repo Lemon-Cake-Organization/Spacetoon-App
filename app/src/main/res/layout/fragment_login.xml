@@ -129,7 +129,7 @@
             android:layout_height="@dimen/_48sdp"
             android:layout_marginHorizontal="@dimen/_16sdp"
             android:layout_marginTop="@dimen/_20sdp"
-            android:background="@drawable/rounded_login_button"
+            android:background="@drawable/rounded_button_background"
             android:text="@string/login"
             android:textAllCaps="false"
             android:textColor="@color/white"

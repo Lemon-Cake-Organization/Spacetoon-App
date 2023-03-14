@@ -120,7 +120,7 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="@dimen/_14sdp"
             android:layout_marginEnd="@dimen/_16sdp"
-            android:background="@drawable/my_shape"
+            android:background="@drawable/rounded_button_background"
             android:fontFamily="@font/mulish_medium"
             android:text="@string/sign_up"
             android:textColor="@color/background_color"
@@ -143,9 +143,9 @@
 
         <ImageView
             android:id="@+id/logo_google"
-            android:layout_width="@dimen/_24sdp"
-            android:layout_height="@dimen/_24sdp"
-            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
             android:src="@drawable/ic_google_login"
             app:layout_constraintEnd_toEndOf="@id/sign_up_with_text"
             app:layout_constraintStart_toEndOf="@id/sign_up_with_text"
@@ -163,9 +163,10 @@
 
         <ImageView
             android:id="@+id/logo_facebook"
-            android:layout_width="@dimen/_24sdp"
-            android:layout_height="@dimen/_24sdp"
-            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:adjustViewBounds="true"
             android:src="@drawable/ic_facebook_login"
             app:layout_constraintBottom_toBottomOf="@+id/logo_google"
             app:layout_constraintEnd_toStartOf="@id/sign_up_with_text"
@@ -177,6 +178,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
             android:fontFamily="@font/mulish_medium"
             android:text="@string/already_have_an_account_login"
             android:textColor="@color/black_60"
