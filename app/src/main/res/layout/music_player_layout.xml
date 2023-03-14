@@ -2,12 +2,12 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_color"
         android:orientation="vertical">
 
         <LinearLayout
@@ -151,8 +151,8 @@
                 android:layout_marginBottom="@dimen/_20sdp"
                 android:text="@string/sharet_elkanas_rasha_rezk"
                 android:textColor="@color/song_name_color"
-                android:textSize="14sp"
-                android:textFontWeight="300"/>
+                android:textFontWeight="300"
+                android:textSize="14sp" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
