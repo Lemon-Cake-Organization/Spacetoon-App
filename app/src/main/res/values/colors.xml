@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="base_red">#AD1111</color>
+    <color name="seek_gray">#3F3E3E</color>
+    <color name="gray">#545454</color>
+    <color name="back_arrow">#646464</color>
+
+    <color name="backGroundActivity">#e0e0e0</color>
+    <color name="colorText">#000000</color>
+    <color name="backGroundButtonTime">#AD1111</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="backGround">#F5F5F5</color>
+
 </resources>

@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/Spacetoon-App2/app/src/main/res/drawable-v24/ic_sharp_remove_red_eye_24.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/Spacetoon-App2/app/src/main/res/drawable-v24/my_button.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/Spacetoon-App2/app/src/main/res/drawable-v24/shape_button.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/Spacetoon-App2/app/src/main/res/drawable/my_shape.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/Spacetoon-App2/app/src/main/res/font/fonts.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/Spacetoon-App2/app/src/main/res/layout/fragment_login.xml" value="0.14583333333333334" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/Spacetoon-App2/app/src/main/res/layout/fragment_sign_up.xml" value="0.22" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/Spacetoon-App2/app/src/main/res/layout/music_player_layout.xml" value="0.14583333333333334" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
-    <option name="id" value="Android" />
+    <option name="id" value="jpab" />
   </component>
 </project>
